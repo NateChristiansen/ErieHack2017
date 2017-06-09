@@ -1,6 +1,6 @@
 
 
-function createNewDevice()	{
+function customerRoute()	{
 	$.get('/customers', function(data){
 		$.post("/savedatabase", {db: data}, function(res) {
 			console.log(res);
@@ -8,3 +8,14 @@ function createNewDevice()	{
 	});
 
 }
+
+
+$( document ).ready(function() {
+  
+$.get('/customers', function(data){
+
+//Find in html 
+
+}
+
+});
