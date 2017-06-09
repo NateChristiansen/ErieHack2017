@@ -25,6 +25,10 @@ router.get('/customers', function(req, res, next) {
   res.send(db);
 });
 
+router.get('/', function(req, res, next) {
+	res.sendfile(__dirname + "/public/index");
+});
+
 app.use('/', router);
 
 // get the app environment from Cloud Foundry
