@@ -7,7 +7,7 @@ body {
 }
 
 .t-g-content {
-  padding: 30px 40px;
+  padding: 0px 0px;
   margin-bottom: 40px;
 
   /** TODO:  Remove after content is included **/
@@ -53,18 +53,41 @@ footer {
   background-color: #0b486b;
 }
 
+.t-title2-wrapper {
+  height: 50px;
+  max-width: 960px;
+  margin: 0 auto;
+  background-color: #0b7abf;
+  padding-bottom: 10px;
+}
+
 .t-title-wrapper > div {
   position: relative;
   height: 100%;
 }
 
+.t-gutter-wrapper {
+  background-color: #d1d1d1;
+  height: 100%;
+  width: 0%;
+}
+
+}
 .t-title {
   color: #FFF;
   font-size: 72px;
-  position: absolute;
+  position: absolute;  
   bottom: 0;
   margin-left: 50px;
 }
+.header {
+  color: #FFF;
+  font-size: 72px;
+  position: absolute;  
+  bottom: 0;
+  margin-left: 50px;
+}
+
 
 @media (max-width: 750px) {
   .t-title {
@@ -160,3 +183,20 @@ footer {
   text-decoration: none;
   color: #fff;
 }
+
+h2 { color: #FFF; 
+     font-family: arial, sans-serif;
+   margin: 5px;
+}
+
+figure { float: left; 
+  margin: 5px; 
+  padding-top: 10px;
+  padding-right: 20px; 
+  } 
+
+g { float: left; 
+  width: 150px; 
+  letter-spacing:0.1em; 
+  font-weight: bold; 
+  } 
