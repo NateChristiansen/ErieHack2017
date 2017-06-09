@@ -37,6 +37,24 @@ router.get('/dashboard', function(req, res, next) {
 	res.sendFile(__dirname + "/public/Dashboard.html");
 });
 
+router.get('/cammakin', function(req, res, next){
+	res.sendFile(__dirname + "/public/CamMakin.html");
+});
+
+router.get('/cleolouis', function(req, res, next){
+	res.sendFile(__dirname + "/public/CamMakin.html");
+});
+
+
+router.get('/joshsitter', function(req, res, next){
+	res.sendFile(__dirname + "/public/CamMakin.html");
+});
+
+router.get('/jordynheweo', function(req, res, next){
+	res.sendFile(__dirname + "/public/CamMakin.html");
+});
+
+
 router.post('/savedatabase', function(req,res,next){
 	console.log(req.body);
 	fs.writeFile('db.json', JSON.stringify(db));

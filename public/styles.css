@@ -77,6 +77,16 @@ footer {
   color: #FFF;
   font-size: 72px;
   position: absolute;  
+<<<<<<< HEAD
+=======
+  bottom: 0;
+  margin-left: 50px;
+}
+.header {
+  color: #FFF;
+  font-size: 72px;
+  position: absolute;  
+>>>>>>> 59d6d395268161d91f3963b917fccf97afe7ece7
   bottom: 0;
   margin-left: 50px;
 }
@@ -87,6 +97,7 @@ footer {
   bottom: 0;
   margin-left: 50px;
 }
+
 
 
 @media (max-width: 750px) {
@@ -196,6 +207,7 @@ h2 { color: #FFF;
    margin: 5px;
 }
 
+<<<<<<< HEAD
 figure { 
   float: left; 
   left margin: 20px; 
@@ -226,3 +238,16 @@ figure {
 
 }
 
+=======
+figure { float: left; 
+  margin: 5px; 
+  padding-top: 10px;
+  padding-right: 20px; 
+  } 
+
+g { float: left; 
+  width: 150px; 
+  letter-spacing:0.1em; 
+  font-weight: bold; 
+  } 
+>>>>>>> 59d6d395268161d91f3963b917fccf97afe7ece7
