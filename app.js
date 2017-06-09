@@ -10,7 +10,7 @@ var fs = require('fs');
 var express = require('express');
 var router = express.Router();
 var bodyParser = require('body-parser');
-
+var nodemailer = require('nodemailer');
 // cfenv provides access to your Cloud Foundry environment
 // for more info, see: https://www.npmjs.com/package/cfenv
 var cfenv = require('cfenv');
@@ -58,7 +58,29 @@ router.get('/jordynheweo', function(req, res, next){
 router.post('/savedatabase', function(req,res,next){
 	console.log(req.body);
 	fs.writeFile('db.json', JSON.stringify(db));
-})
+});
+
+router.post('/message', function(req, res) {
+	try {
+		var message = req.body;
+		var transporter = nodemailer.createTransport('smtps://eriesmart2017:hackathon2017@smtp.gmail.com');
+		var options = {
+			from: '"Erie Smart" <eriesmart2017@gmail.com>',
+			to: 'natechristiansen42@gmail.com',
+			subject: 'test',
+			text: 'test'
+		};
+		transporter.sendMail(options, function(error, info){
+			if (error) {
+				res.send('Failure');
+			}
+			res.send('Sent');
+		});
+	}
+	catch(err) {
+		res.send(JSON.stringify(err.message));
+	}
+});
 
 app.use('/', router);
 
