@@ -8,3 +8,9 @@ function createNewDevice()	{
 	});
 
 }
+
+function email() {
+	$.post("/message", null, function(res) {
+		console.log(res);
+	});
+}
