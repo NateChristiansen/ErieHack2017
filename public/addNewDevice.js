@@ -14,7 +14,7 @@ $( document ).ready(function() {
   
 $.get('/customers', function(data){
 
-//Find in html 
+//Find in html file
 
 }
 

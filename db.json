@@ -1,1 +1,151 @@
-{"customers":[{"fName":"Cameron","lName":"Makin","email":"cameron.makin@erieinsurance.com","devices":[{"device":"Water","status":"Green","brand":"empryStuff"},{"device":"Thermostat","status":"Yellow","brand":"Nest"},{"device":"Security","status":"Red","brand":"adobe"},{"device":"CSmoke","status":"Green","brand":"Nest"}]},{"fName":"Cleo","lName":"Louis","email":"cleo.louis@erieinsurance.com","devices":[{"device":"Thermostat","status":"Yellow","brand":"Nest"}]},{"fName":"Jordyn","lName":"Louis","email":"cleo.louis@erieinsurance.com","devices":[{"device":"Security","status":"Red","brand":"adobe"},{"device":"CSmoke","status":"Green","brand":"Nest"}]}]}
+{
+	"customers" : [ 
+		{
+			"fName": "Cameron",
+			"lName": "Makin",
+			"email": "cameron.makin@erieinsurance.com",
+			"devices": [
+				{
+					"device": "Water",
+					"status": "Green",
+					"brand": "Nest"
+				},
+				{
+					"device": "Thermostat",
+					"status": "Green",
+					"brand": "Nest"
+				},
+				{
+					"device": "Security",
+					"status": "Green",
+					"brand": "adobe"
+
+				},
+				{
+					"device": "CSmoke",
+					"status": "Green",
+					"brand": "Nest"
+				}
+			]
+
+		},
+
+		{
+			"fName": "Cleo",
+			"lName": "Louis",
+			"email": "cleo.louis@erieinsurance.com",
+			"devices":[
+				{
+					"device": "Thermostat",
+					"status": "Green",
+					"brand": "Nest"
+				}
+			]
+		},
+		{
+			"fName": "Jordyn",
+			"lName": "Heweo",
+			"email": "jordyn.heweo@erieinsurance.com",
+			"devices":[
+				{
+					"device": "Security",
+					"status": "Green",
+					"brand": "adobe"
+
+				},
+				{
+					"device": "CSmoke",
+					"status": "Green",
+					"brand": "Nest"
+				}
+			]
+		},
+		{
+			"fName": "Joe",
+			"lName": "Vahey",
+			"email": "joe.vahey@erieinsurance.com",
+			"devices":[
+				{
+					"device": "Security",
+					"status": "Green",
+					"brand": "adobe"
+
+				},
+				{
+					"device": "CSmoke",
+					"status": "Red",
+					"brand": "Nest"
+				},
+				{
+					"device": "Water",
+					"status": "Yellow",
+					"brand": "Nest"
+
+				}
+			]
+
+
+
+		},
+		{
+			"fName": "Josh",
+			"lName": "Sitter",
+			"email": "josh.sitter@erieinsurance.com",
+			"devices":[
+						{
+					"device": "Water",
+					"status": "Green",
+					"brand": "Nest"
+				},
+				{
+					"device": "Thermostat",
+					"status": "Green",
+					"brand": "Nest"
+				},
+				{
+					"device": "Security",
+					"status": "Red",
+					"brand": "adobe"
+
+				},
+				{
+					"device": "CSmoke",
+					"status": "Green",
+					"brand": "Nest"
+				}
+			]
+
+		},
+			{
+			"fName": "Josh",
+			"lName": "Sitter",
+			"email": "josh.sitter@erieinsurance.com",
+			"devices":[
+						{
+					"device": "Water",
+					"status": "Green",
+					"brand": "Nest"
+				},
+				{
+					"device": "Thermostat",
+					"status": "Green",
+					"brand": "Nest"
+				},
+				{
+					"device": "Security",
+					"status": "Red",
+					"brand": "adobe"
+
+				},
+				{
+					"device": "CSmoke",
+					"status": "Green",
+					"brand": "Nest"
+				}
+			]
+
+		}
+
+
+	]
+}

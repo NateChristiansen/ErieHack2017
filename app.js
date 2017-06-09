@@ -37,23 +37,13 @@ router.get('/dashboard', function(req, res, next) {
 	res.sendFile(__dirname + "/public/Dashboard.html");
 });
 
-router.get('/cammakin', function(req, res, next){
-	res.sendFile(__dirname + "/public/CamMakin.html");
-});
-
-router.get('/cleolouis', function(req, res, next){
-	res.sendFile(__dirname + "/public/CamMakin.html");
-});
-
-
 router.get('/joshsitter', function(req, res, next){
-	res.sendFile(__dirname + "/public/CamMakin.html");
+	res.sendFile(__dirname + "/public/joshsitter.html");
 });
 
-router.get('/jordynheweo', function(req, res, next){
-	res.sendFile(__dirname + "/public/CamMakin.html");
+router.get('/joevahey', function(req, res, next){
+	res.sendFile(__dirname + "/public/joevahey.html");
 });
-
 
 router.post('/savedatabase', function(req,res,next){
 	console.log(req.body);
@@ -62,11 +52,11 @@ router.post('/savedatabase', function(req,res,next){
 
 router.post('/message', function(req, res) {
 	try {
-		var message = req.body;
+		var message = req.body; 
 		var transporter = nodemailer.createTransport('smtps://eriesmart2017:hackathon2017@smtp.gmail.com');
 		var options = {
 			from: '"Erie Smart" <eriesmart2017@gmail.com>',
-			to: 'natechristiansen42@gmail.com',
+			to: 'cammakin8@gmail.com',
 			subject: 'test',
 			text: 'test'
 		};
@@ -92,3 +82,20 @@ app.listen(appEnv.port, '0.0.0.0', function() {
   // print a message when the server starts listening
   console.log("server starting on " + appEnv.url);
 });
+
+/*
+router.get('/jordynheweo', function(req, res, next){
+	res.sendFile(__dirname + "/public/jo.html");
+});
+
+router.get('/cleolouis', function(req, res, next){
+	res.sendFile(__dirname + "/public/cleolouis.html");
+});
+
+router.get('/cammakin', function(req, res, next){
+	res.sendFile(__dirname + "/public/cammakin.html");
+});
+
+
+
+*/
