@@ -14,6 +14,12 @@ Developed by: Nate Christansen and Cameron Makin
 For: Erie Insurance 2017 Hackathon (IoT Group)
 Date: 6/9/2017
 File: app.js
+
+Developer Note: We wanted to utilize IBM Bluemix, unfortunatly we could not find time to make our project public...
+...so everything must be run locally
+
+Special thanks to IBM Engineers for helping our team out with the email messageing functionality in this app (in joehavey.html and Sitter.html).
+Additional credit goes to stackoverflow and w3schools (accessed via Google Search) for additional support.
 */
 
 
@@ -26,7 +32,7 @@ var nodemailer = require('nodemailer');
 // for more info, see: https://www.npmjs.com/package/cfenv
 var cfenv = require('cfenv');
 
-var db = require("./db.json");
+var db = require("./db.json");//Our JSON Data
 
 // create a new express server
 var app = express();
@@ -67,6 +73,7 @@ router.post('/savedatabase', function(req,res,next){
 	fs.writeFile('db.json', JSON.stringify(db));
 });
 
+//Email Messages
 router.post('/breakInMessage', function(req, res) {
 	try {
 		var message = req.body; 
