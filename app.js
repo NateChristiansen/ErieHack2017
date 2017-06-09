@@ -6,6 +6,7 @@
 
 // This application uses express as its web server
 // for more info, see: http://expressjs.com
+var fs = require('fs');
 var express = require('express');
 var router = express.Router();
 
@@ -32,6 +33,11 @@ router.get('/', function(req, res, next) {
 router.get('/dashboard', function(req, res, next) {
 	res.sendFile(__dirname + "/public/Dashboard.html");
 });
+
+router.post('/savedatabase', function(req,res,next){
+	console.log(req.body);
+	fs.writeFile('db.json', JSON.stringify(db));
+})
 
 app.use('/', router);
 
