@@ -77,6 +77,16 @@ footer {
   color: #FFF;
   font-size: 72px;
   position: absolute;  
+<<<<<<< HEAD
+=======
+  bottom: 0;
+  margin-left: 50px;
+}
+.header {
+  color: #FFF;
+  font-size: 72px;
+  position: absolute;  
+>>>>>>> 59d6d395268161d91f3963b917fccf97afe7ece7
   bottom: 0;
   margin-left: 50px;
 }
@@ -87,6 +97,7 @@ footer {
   bottom: 0;
   margin-left: 50px;
 }
+
 
 
 @media (max-width: 750px) {
@@ -130,6 +141,13 @@ footer {
   max-width: 960px;
   margin: 0 auto;
   background-color: #fff;
+}
+
+.t-canvas-wrapper {
+  min-height: 50vh;
+  max-width: auto;
+  background-color: #e2e2e2
+;
 }
 
 .t-dash-welcome {
@@ -189,6 +207,38 @@ h2 { color: #FFF;
    margin: 5px;
 }
 
+<<<<<<< HEAD
+figure { 
+  float: left; 
+  left margin: 20px; 
+  vertical-align: top;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  padding-right: 20px; 
+  } 
+
+.Property {        
+  margin-left:auto;
+  margin-right:10px;
+  padding-top: 10px;
+  vertical-align: top;
+  position:relative;
+  display: inline-block;
+  padding-bottom: 20px;
+
+}
+
+.OnlineAccount {
+  vertical-align: top;
+  margin-left: auto;
+  padding-top: 10px;
+  margin-right:0px;
+  display: inline-block;
+  padding-bottom: 20px;
+
+}
+
+=======
 figure { float: left; 
   margin: 5px; 
   padding-top: 10px;
@@ -200,3 +250,4 @@ g { float: left;
   letter-spacing:0.1em; 
   font-weight: bold; 
   } 
+>>>>>>> 59d6d395268161d91f3963b917fccf97afe7ece7
