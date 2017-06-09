@@ -7,6 +7,7 @@
 // This application uses express as its web server
 // for more info, see: http://expressjs.com
 var express = require('express');
+var router = express.Router();
 
 // cfenv provides access to your Cloud Foundry environment
 // for more info, see: https://www.npmjs.com/package/cfenv
@@ -20,12 +21,14 @@ var app = express();
 // serve the files out of ./public as our main files
 app.use(express.static(__dirname + '/public'));
 
+router.get('/customers', function(req, res, next) {
+  res.send(db);
+});
+
+app.use('/', router);
+
 // get the app environment from Cloud Foundry
 var appEnv = cfenv.getAppEnv();
-
-console.log(db.customers);
-
-var trash = "I am trash";
 
 // start server on the specified port and binding host
 app.listen(appEnv.port, '0.0.0.0', function() {
