@@ -15,6 +15,20 @@
 
     <!-- Styles -->
     <link rel="stylesheet" href="styles.css">
+      <script>
+      $(document).ready(function(){
+    $("#sendemail").click(function(e){
+        $.post("/breakInMessage",
+        {
+          
+        },
+        function(data,status){
+            alert("Email Sent");
+        });
+        e.preventDefault();
+    });
+});
+    </script>
   </head>
   <body>
     <div class="t-header">
@@ -35,6 +49,8 @@
         <div><a class="t-nav-link">ACCOUNT OVERVIEW</a></div>
         <div><a class="t-nav-link">BILLING🠟</a></div>
         <div><a class="t-nav-link">CLAIMS</a></div>
+        <a class="btn btn-primary" id="sendemail">Send Email</a>
+
       </div>
     </div>
     <main class="t-canvas-wrapper">
@@ -44,7 +60,7 @@
   </div> 
 
   <div class="Property">
-          <img src="Josh Home Panel.JPG" width="800" height="455" alt="Customer Panel">
+          <img onclick="location.href='/Sitter2'" src="Josh Home Panel.JPG" width="800" height="455" alt="Customer Panel">
   </div>
 
   <div class="OnlineAccount">

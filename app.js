@@ -33,24 +33,34 @@ router.get('/', function(req, res, next) {
 	res.sendFile(__dirname + "/public/index.html");
 });
 
-router.get('/dashboard', function(req, res, next) {
+/*router.get('/dashboard', function(req, res, next) {
 	res.sendFile(__dirname + "/public/Dashboard.html");
-});
+});*/
 
-router.get('/joshsitter', function(req, res, next){
+router.get('/Sitter', function(req, res, next){
 	res.sendFile(__dirname + "/public/Sitter.html");
 });
+
+   router.get('/Sitter2', function(req, res, next){
+            res.sendFile(__dirname + "/public/Sitter2.html");
+          });      
 
 router.get('/joevahey', function(req, res, next){
 	res.sendFile(__dirname + "/public/joevahey.html");
 });
+
+          router.get('/joevahey2', function(req, res, next){
+  res.sendFile(__dirname + "/public/joevahey2.html");
+});
+
+
 
 router.post('/savedatabase', function(req,res,next){
 	console.log(req.body);
 	fs.writeFile('db.json', JSON.stringify(db));
 });
 
-router.post('/message', function(req, res) {
+router.post('/breakInMessage', function(req, res) {
 	try {
 		var message = req.body; 
 		var transporter = nodemailer.createTransport('smtps://eriesmart2017:hackathon2017@smtp.gmail.com');
@@ -58,7 +68,29 @@ router.post('/message', function(req, res) {
 			from: '"Erie Smart" <eriesmart2017@gmail.com>',
 			to: 'cammakin8@gmail.com',
 			subject: 'ERIE Smart Alert',
-			text: 'Hello Agent Cam,     One of your customers has an ERIE Smart home alert. Please contact them as soon as you can.'
+			text: "A break in was detected for Josh Sitter's at his 2568 Washington Ave Residence. Please follow up with the named insured as soon as possible."
+		};
+		transporter.sendMail(options, function(error, info){
+			if (error) {
+				res.send('Failure');
+			}
+			res.send('Sent');
+		});
+	}
+	catch(err) {
+		res.send(JSON.stringify(err.message));
+	}
+});
+
+router.post('/smokeAlarmMessage', function(req, res) {
+	try {
+		var message = req.body; 
+		var transporter = nodemailer.createTransport('smtps://eriesmart2017:hackathon2017@smtp.gmail.com');
+		var options = {
+			from: '"Erie Smart" <eriesmart2017@gmail.com>',
+			to: 'cammakin8@gmail.com',
+			subject: 'ERIE Smart Alert',
+			text: 'Hello Agent Cam, One of your customers has an ERIE Smart home alert. Please contact them as soon as you can.'
 		};
 		transporter.sendMail(options, function(error, info){
 			if (error) {
