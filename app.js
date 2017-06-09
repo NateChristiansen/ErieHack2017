@@ -88,9 +88,9 @@ router.post('/smokeAlarmMessage', function(req, res) {
 		var transporter = nodemailer.createTransport('smtps://eriesmart2017:hackathon2017@smtp.gmail.com');
 		var options = {
 			from: '"Erie Smart" <eriesmart2017@gmail.com>',
-			to: 'cammakin8@gmail.com',
+			to: 'joseph.vahey@erieinsurance.com',
 			subject: 'ERIE Smart Alert',
-			text: 'Hello Agent Cam, One of your customers has an ERIE Smart home alert. Please contact them as soon as you can.'
+			text: 'The carbon monoxide alarm has been activated for Joe Vahey at his 1478 Brown Rd Residence. Please follow up with the named insured as soon as possible.'
 		};
 		transporter.sendMail(options, function(error, info){
 			if (error) {
