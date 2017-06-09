@@ -25,6 +25,8 @@ var appEnv = cfenv.getAppEnv();
 
 console.log(db.customers);
 
+var trash = "I am trash";
+
 // start server on the specified port and binding host
 app.listen(appEnv.port, '0.0.0.0', function() {
   // print a message when the server starts listening
