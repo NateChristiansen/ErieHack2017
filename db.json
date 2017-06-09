@@ -1,0 +1,13 @@
+{
+	"customers" : [ 
+		{
+			"name": "",
+			"email": "",
+			"devices": [
+				{
+					"deviceName": "Water"
+				}
+			]
+		}
+	]
+}

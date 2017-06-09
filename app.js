@@ -12,6 +12,8 @@ var express = require('express');
 // for more info, see: https://www.npmjs.com/package/cfenv
 var cfenv = require('cfenv');
 
+var db = require("./db.json");
+
 // create a new express server
 var app = express();
 
@@ -20,6 +22,8 @@ app.use(express.static(__dirname + '/public'));
 
 // get the app environment from Cloud Foundry
 var appEnv = cfenv.getAppEnv();
+
+console.log(db.customers);
 
 // start server on the specified port and binding host
 app.listen(appEnv.port, '0.0.0.0', function() {
