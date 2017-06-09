@@ -26,7 +26,11 @@ router.get('/customers', function(req, res, next) {
 });
 
 router.get('/', function(req, res, next) {
-	res.sendfile(__dirname + "/public/index");
+	res.sendFile(__dirname + "/public/index.html");
+});
+
+router.get('/dashboard', function(req, res, next) {
+	res.sendFile(__dirname + "/public/Dashboard.html");
 });
 
 app.use('/', router);
