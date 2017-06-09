@@ -1,3 +1,5 @@
+/*CSS Generated from ERIE Pattern Library and the efforts of:
+ Jordyn Heweo, Cleo Lois, and Josh Sitter -->*/
 body {
   background-color: #e2e2e2;
 }
@@ -7,7 +9,8 @@ body {
 }
 
 .t-g-content {
-  padding: 0px 0px;
+  padding-right: 10px;
+  padding-left: 50px;
   margin-bottom: 40px;
 
   /** TODO:  Remove after content is included **/
@@ -236,3 +239,10 @@ h2 { color: #FFF;
 
 }
 
+.button {
+  padding-top: 15px;
+  padding-left:400px;
+  color: #000;
+  font-weight: 500;
+  font-variant: Gotham SSm A, Gotham SSm B, Work Sans, sans-serif;
+}
