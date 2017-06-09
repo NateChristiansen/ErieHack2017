@@ -57,8 +57,8 @@ router.post('/message', function(req, res) {
 		var options = {
 			from: '"Erie Smart" <eriesmart2017@gmail.com>',
 			to: 'cammakin8@gmail.com',
-			subject: 'test',
-			text: 'test'
+			subject: 'ERIE Smart Alert',
+			text: 'Hello Agent Cam,/n/nOne of your customers has an ERIE Smart home alert. Please contact them as soon as you can.'
 		};
 		transporter.sendMail(options, function(error, info){
 			if (error) {
