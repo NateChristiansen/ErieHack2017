@@ -38,7 +38,7 @@ router.get('/dashboard', function(req, res, next) {
 });
 
 router.get('/joshsitter', function(req, res, next){
-	res.sendFile(__dirname + "/public/joshsitter.html");
+	res.sendFile(__dirname + "/public/Sitter.html");
 });
 
 router.get('/joevahey', function(req, res, next){
