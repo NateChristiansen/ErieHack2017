@@ -1,0 +1,162 @@
+body {
+  background-color: #e2e2e2;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.t-g-content {
+  padding: 30px 40px;
+  margin-bottom: 40px;
+
+  /** TODO:  Remove after content is included **/
+  height: 500px;
+  width: 100%;
+}
+
+.t-g-back-page-nav {
+  height: 67px;
+  background-color: #e2e2e2;
+}
+
+footer {
+  width: 100%;
+  bottom: 0;
+}
+
+.t-header {
+  background-color: #fff;
+}
+
+.t-image-wrapper {
+  height: 60px;
+}
+
+.t-image-wrapper .t-helper {
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+
+.t-image-wrapper img {
+  height: 37px;
+  margin-left: 50px;
+}
+
+.t-image-wrapper > a:hover {
+  text-decoration: none;
+}
+
+.t-title-wrapper {
+  height: 165px;
+  background-color: #0b486b;
+}
+
+.t-title-wrapper > div {
+  position: relative;
+  height: 100%;
+}
+
+.t-title {
+  color: #FFF;
+  font-size: 72px;
+  position: absolute;
+  bottom: 0;
+  margin-left: 50px;
+}
+
+@media (max-width: 750px) {
+  .t-title {
+    font-size: 60px;
+  }
+  .t-title-wrapper {
+    height: 120px;
+  }
+}
+
+@media (max-width: 600px) {
+  .t-title {
+    font-size: 48px;
+  }
+}
+
+.t-nav-wrapper {
+  height: 100px;
+}
+
+.t-nav-wrapper > div {
+  display: inline-block;
+  margin-left: 50px;
+}
+
+.t-nav-link {
+  text-decoration: none;
+  color: #000;
+  font-size: 18px;
+  line-height: 100px;
+}
+
+.t-nav-link:hover {
+  text-decoration: none;
+  color: #000;
+}
+
+.t-content-wrapper {
+  min-height: 50vh;
+  max-width: 960px;
+  margin: 0 auto;
+  background-color: #fff;
+}
+
+.t-dash-welcome {
+  margin: 20px 0;
+}
+
+.t-dash-welcome-text {
+  margin-bottom: 20px;
+}
+
+.t-dash-block-container {
+  width: 100%;
+  display: table;
+  border-spacing: 20px 10px;
+}
+
+.t-dash-block-container > div {
+  display: table-cell;
+  width: 50%;
+  min-width: 275px;
+  border-spacing: 5px;
+  height: 400px;
+  text-align: center;
+  vertical-align: middle;
+  background-color: #085e93;
+  transition: transform 0.1s;
+}
+
+.t-dash-block-container > div:hover {
+  box-shadow: 0 0 10px #0b486b;
+  transform: scale(1.01);
+}
+
+.t-dash-block-container > div:hover {
+  cursor: pointer;
+}
+
+.t-dash-block-container a {
+  font-weight: 500;
+  font-size: 2.4em;
+  color: #fff;
+}
+
+@media (max-width: 625px) {
+  .t-dash-block-container a {
+    font-size: 2.0em;
+  }
+}
+
+.t-dash-block-container a:hover {
+  text-decoration: none;
+  color: #fff;
+}
