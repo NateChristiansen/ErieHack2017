@@ -9,20 +9,6 @@
 
     <!-- jquery -->
     <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
-    <script>
-      $(document).ready(function(){
-    $("#sendemail").click(function(e){
-        $.post("/message",
-        {
-          
-        },
-        function(data,status){
-            alert("Email Sent");
-        });
-        e.preventDefault();
-    });
-});
-    </script>
 
     <!-- Erie Customized Bootstrap styles from erieinsurance.com -->
     <link rel="stylesheet" href="https://www.erieinsurance.com/webassets/v1.2/Content/erie-bootstrap-edge" />
@@ -49,9 +35,6 @@
         <div><a class="t-nav-link">ACCOUNT OVERVIEW</a></div>
         <div><a class="t-nav-link">BILLING🠟</a></div>
         <div><a class="t-nav-link">CLAIMS</a></div>
-        <a class="btn btn-primary" id="sendemail">Send Email</a>
-        <a class="btn btn-primary" onclick="location.href='/joevahey'"">Joe Vahey Button</a>
-
       </div>
     </div>
     <div class="t-content-wrapper wrapper">
@@ -61,6 +44,7 @@
         <div class ="t-title2-wrapper">
         <h2>Your Erie Smart Customer</h2>
   <figure> 
+         <img src="" width="250" height="455" alt="Customer Panel">
          <img src="" width="250" height="300" alt="Customer Panel">
   <figcaption></figcaption> 
   </figure> 
