@@ -1,13 +1,1 @@
-{
-	"customers" : [ 
-		{
-			"name": "",
-			"email": "",
-			"devices": [
-				{
-					"deviceName": "Water"
-				}
-			]
-		}
-	]
-}
+{"customers":[{"fName":"Cameron","lName":"Makin","email":"cameron.makin@erieinsurance.com","devices":[{"device":"Water","status":"Green","brand":"empryStuff"},{"device":"Thermostat","status":"Yellow","brand":"Nest"},{"device":"Security","status":"Red","brand":"adobe"},{"device":"CSmoke","status":"Green","brand":"Nest"}]},{"fName":"Cleo","lName":"Louis","email":"cleo.louis@erieinsurance.com","devices":[{"device":"Thermostat","status":"Yellow","brand":"Nest"}]},{"fName":"Jordyn","lName":"Louis","email":"cleo.louis@erieinsurance.com","devices":[{"device":"Security","status":"Red","brand":"adobe"},{"device":"CSmoke","status":"Green","brand":"Nest"}]}]}
