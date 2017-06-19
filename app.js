@@ -18,7 +18,7 @@ File: app.js
 Developer Note: We wanted to utilize IBM Bluemix, unfortunatly we could not find time to make our project public...
 ...so everything must be run locally
 
-Special thanks to IBM Engineers for helping our team out with the email messageing functionality in this app (in joehavey.html and Sitter.html).
+Special thanks to IBM Engineers for helping our team out with the email messageing functionality in this app (in app.js, joehavey.html, and Sitter.html).
 Additional credit goes to stackoverflow and w3schools (accessed via Google Search) for additional support.
 */
 
@@ -102,7 +102,7 @@ router.post('/smokeAlarmMessage', function(req, res) {
 		var transporter = nodemailer.createTransport('smtps://eriesmart2017:hackathon2017@smtp.gmail.com');
 		var options = {
 			from: '"Erie Smart" <eriesmart2017@gmail.com>',
-			to: 'yostjmv@gmail.com',
+			to: //'yostjmv@gmail.com',
 			subject: 'ERIE Smart Alert',
 			text: 'The carbon monoxide alarm has been activated for Joe Vahey at his 1478 Brown Rd Residence. Please follow up with the named insured as soon as possible.'
 		};
